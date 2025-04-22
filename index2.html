@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10 proyectos de programación de software </title>
+</head>
+<body>
+    <style>
+        body {
+           width: 60%;
+           height: 100vh;
+           display: block;
+           margin: auto;
+           justify-items: center;
+       }
+     
+   </style>
+    <div class="container">
+        <h1>10 proyectos de programación de software</h1>
+        <a href="https://es.wikipedia.org/wiki/.net"><p id="uno">1. Tecnologías .NET</p></a>
+        <a href="https://en-m-wikipedia-org.translate.goog/wiki/Mobile_app_development?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=tc"><p id="dos">2. Desarrollo de apps moviles</p></a>
+        <a href="https://es.wikipedia.org/wiki/Python"><p id="tres">3. Creación de programas con python</p></a>
+        <a href="https://es.wikipedia.org/wiki/CSS"><p id="cuatro">4. CSS</p></a>
+        <a href="https://es.wikipedia.org/wiki/HTML"><p id="cinco">5. HTML</p></a>
+        <a href="https://es.wikipedia.org/wiki/Desarrollo_web_front-end"><p id="seis">6. Lenguajes del Front-End</p></a>
+        <a href="https://es.wikipedia.org/wiki/Desarrollo_web#:~:text=Desarrollo%20Back-End%3A%20El%20back,%2C%20Flask)%2C%20y%20PHP."><p id="siete">7. Lenguajes del Back-End</p></a>
+        <a href="https://es.wikipedia.org/wiki/Contenedorización_(informática)"><p id="ocho">8. Contenedores y orquestación</p></a>
+        <a href="https://es.wikipedia.org/wiki/DevOps"><p id="nueve">9. DevOps</p></a>
+        <a href="https://es.wikipedia.org/wiki/Inteligencia_artificial"><p id="diez">10. Inteligencia Artificial</p></a>
+    </div>
+    <script>
+        fetch(
+            "https://gist.githubusercontent.com/Minrex55/6f3ab5565fb54305d90d22f3d22945bf/raw/521b6f2c732c16c717c33c74399b83caa5c861e8/examen.json"
+        )
+        .then((res)=>res.json())
+        .then((res)=>{
+            document.getElementById("uno").textContent = res.uno;
+            console.log(res.uno)
+            document.getElementById("dos").textContent = res.dos;
+            console.log(res.dos)
+            document.getElementById("tres").textContent = res.tres;
+            console.log(res.tres)
+            document.getElementById("cuatro").textContent = res.cuatro;
+            console.log(res.cuatro)
+            document.getElementById("cinco").textContent = res.cinco;
+            console.log(res.cinco)
+            document.getElementById("seis").textContent = res.seis;
+            console.log(res.seis)
+            document.getElementById("siete").textContent = res.siete;
+            console.log(res.siete)
+            document.getElementById("ocho").textContent = res.ocho;
+            console.log(res.ocho)
+            document.getElementById("nueve").textContent = res.nueve;
+            console.log(res.nueve)
+            document.getElementById("diez").textContent = res.diez;
+            console.log(res.diez)
+        })
+        .catch((e)=>{console.log(e)})
+    </script>
+</body>
+</html>
